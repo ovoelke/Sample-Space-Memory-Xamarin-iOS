@@ -15,9 +15,11 @@ When the player starts a new game, he should be able to choose a difficulty leve
 The selected difficulty level determines how many fields are displayed in the game.
 
 Sample:
-- Easy = 3x3
-- Medium = 5x5
-- Hard = 7x7
+| Difficult | Fieldsize |
+|-----------|-----------|
+| Easy      | 3 x 3     |               
+| Medium    | 5 x 5     |
+| Hard      | 7 x 7     |
 
 ## Highscore
 
@@ -31,10 +33,8 @@ The images from the `/Design` folder can be used as the basis for the design.
 
 ![Tile-Preview](Design/Tiles.png)
 
-## Architektur
+## Architecture
 
-An [MVVM](https://en.wikipedia.org/wiki/Model–view–viewmodel) architecture is recommended.
-
-The app should also be built as a cross-platform app using [Xamarin](https://visualstudio.microsoft.com/xamarin/).
+An [MVVM](https://en.wikipedia.org/wiki/Model–view–viewmodel) architecture is recommended. The app should also be built as a cross-platform app using [Xamarin](https://visualstudio.microsoft.com/xamarin/).
 
 A documentation for this framework can be found here: https://docs.microsoft.com/xamarin/
