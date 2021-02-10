@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{7C1EB678-507A-485D-8CBE-37C1DBD5A28F}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SpaceMemory.iOS</RootNamespace>
+    <AssemblyName>SpaceMemory.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>53672</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IOSDebuggerPort>52013</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Share.Abstractions">
+      <HintPath>..\packages\Plugin.Share.7.1.1\lib\Xamarin.iOS10\Plugin.Share.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Share">
+      <HintPath>..\packages\Plugin.Share.7.1.1\lib\Xamarin.iOS10\Plugin.Share.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.2.0\lib\Xamarin.iOS10\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.2.0\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross">
+      <HintPath>..\packages\MvvmCross.6.4.2\lib\xamarinios10\MvvmCross.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK-1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\StartViewLogo.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\StartViewLogo.imageset\Background 1.png" />
+    <ImageAsset Include="Assets.xcassets\StartViewLogo.imageset\Background 1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\StartViewLogo.imageset\Background 1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\TileA.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\TileA.imageset\Tile_A.png" />
+    <ImageAsset Include="Assets.xcassets\TileA.imageset\Tile_A%402x.png" />
+    <ImageAsset Include="Assets.xcassets\TileA.imageset\Tile_A%403x.png" />
+    <ImageAsset Include="Assets.xcassets\TileB.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\TileB.imageset\Tile_B.png" />
+    <ImageAsset Include="Assets.xcassets\TileB.imageset\Tile_B%402x.png" />
+    <ImageAsset Include="Assets.xcassets\TileB.imageset\Tile_B%403x.png" />
+    <ImageAsset Include="Assets.xcassets\TileC.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\TileC.imageset\Tile_C.png" />
+    <ImageAsset Include="Assets.xcassets\TileC.imageset\Tile_C%402x.png" />
+    <ImageAsset Include="Assets.xcassets\TileC.imageset\Tile_C%403x.png" />
+    <ImageAsset Include="Assets.xcassets\TileD.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\TileD.imageset\Tile_D.png" />
+    <ImageAsset Include="Assets.xcassets\TileD.imageset\Tile_D%402x.png" />
+    <ImageAsset Include="Assets.xcassets\TileD.imageset\Tile_D%403x.png" />
+    <ImageAsset Include="Assets.xcassets\TileE.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\TileE.imageset\Tile_E.png" />
+    <ImageAsset Include="Assets.xcassets\TileE.imageset\Tile_E%402x.png" />
+    <ImageAsset Include="Assets.xcassets\TileE.imageset\Tile_E%403x.png" />
+    <ImageAsset Include="Assets.xcassets\TileF.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\TileF.imageset\Tile_F.png" />
+    <ImageAsset Include="Assets.xcassets\TileF.imageset\Tile_F%402x.png" />
+    <ImageAsset Include="Assets.xcassets\TileF.imageset\Tile_F%403x.png" />
+    <ImageAsset Include="Assets.xcassets\TileG.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\TileG.imageset\Tile_G.png" />
+    <ImageAsset Include="Assets.xcassets\TileG.imageset\Tile_G%402x.png" />
+    <ImageAsset Include="Assets.xcassets\TileG.imageset\Tile_G%403x.png" />
+    <ImageAsset Include="Assets.xcassets\TileMasked.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\TileMasked.imageset\Tile_H.png" />
+    <ImageAsset Include="Assets.xcassets\TileMasked.imageset\Tile_H%402x.png" />
+    <ImageAsset Include="Assets.xcassets\TileMasked.imageset\Tile_H%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ParticleB.imageset\Particle_B%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ParticleB.imageset\Particle_B%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ParticleB.imageset\Particle_B.png" />
+    <ImageAsset Include="Assets.xcassets\ParticleB.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ParticleC.imageset\Particle_C.png" />
+    <ImageAsset Include="Assets.xcassets\ParticleC.imageset\Particle_C%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ParticleC.imageset\Particle_C%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ParticleC.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ParticleA.imageset\Particle_A.png" />
+    <ImageAsset Include="Assets.xcassets\ParticleA.imageset\Particle_A%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ParticleA.imageset\Particle_A%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ParticleA.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120-2.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120-3.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40-3.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80-2.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40-2.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="CustomMvx\CustomIosAppSetup.cs" />
+    <Compile Include="CustomMvx\CustomIosViewPresenter.cs" />
+    <Compile Include="Services\DialogService.cs" />
+    <Compile Include="Controls\MemoryGameControl.cs" />
+    <Compile Include="Bindings\MemoryGameControlDataBinding.cs" />
+    <Compile Include="Extensions\UIColorExtensions.cs" />
+    <Compile Include="Bindings\MemoryGameControlTappedBinding.cs" />
+    <Compile Include="Extensions\UIViewExtensions.cs" />
+    <Compile Include="Converters\BoolToInversConverter.cs" />
+    <Compile Include="Controls\MemoryCardControl.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Bindings\MemoryGameControlRevealDataBinding.cs" />
+    <Compile Include="Services\GKHighscoreService.cs" />
+    <Compile Include="Extensions\UIViewControllerExtension.cs" />
+    <Compile Include="Base.lproj\Cells\HighscoreCell.cs" />
+    <Compile Include="Base.lproj\Cells\HighscoreCell.designer.cs">
+      <DependentUpon>HighscoreCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base.lproj\GameView.cs" />
+    <Compile Include="Base.lproj\GameView.designer.cs">
+      <DependentUpon>GameView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base.lproj\HighscoreView.cs" />
+    <Compile Include="Base.lproj\HighscoreView.designer.cs">
+      <DependentUpon>HighscoreView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base.lproj\PrepareView.cs" />
+    <Compile Include="Base.lproj\PrepareView.designer.cs">
+      <DependentUpon>PrepareView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base.lproj\StartView.cs" />
+    <Compile Include="Base.lproj\StartView.designer.cs">
+      <DependentUpon>StartView.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Base.lproj\Cells\HighscoreCell.xib" />
+    <InterfaceDefinition Include="Base.lproj\GameView.xib" />
+    <InterfaceDefinition Include="Base.lproj\HighscoreView.xib" />
+    <InterfaceDefinition Include="Base.lproj\PrepareView.xib" />
+    <InterfaceDefinition Include="Base.lproj\StartView.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SpaceMemory.Core\SpaceMemory.Core.csproj">
+      <Project>{EB856F89-085A-46D9-80DC-CF679B5D68DF}</Project>
+      <Name>SpaceMemory.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CustomMvx\" />
+    <Folder Include="Assets.xcassets\StartView.imageset\" />
+    <Folder Include="Assets.xcassets\StartViewLogo.imageset\" />
+    <Folder Include="Services\" />
+    <Folder Include="Controls\" />
+    <Folder Include="Assets.xcassets\TileA.imageset\" />
+    <Folder Include="Bindings\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Converters\" />
+    <Folder Include="Assets.xcassets\TileA.imageset\" />
+    <Folder Include="Assets.xcassets\TileB.imageset\" />
+    <Folder Include="Assets.xcassets\TileC.imageset\" />
+    <Folder Include="Assets.xcassets\TileD.imageset\" />
+    <Folder Include="Assets.xcassets\TileE.imageset\" />
+    <Folder Include="Assets.xcassets\TileF.imageset\" />
+    <Folder Include="Assets.xcassets\TileG.imageset\" />
+    <Folder Include="Assets.xcassets\TileMasked.imageset\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Assets.xcassets\AppIcon.imageset\" />
+    <Folder Include="Base.lproj\" />
+    <Folder Include="de.lproj\" />
+    <Folder Include="en.lproj\" />
+    <Folder Include="Base.lproj\Cells\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BebasKai.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="Resources\SpaceMemory.iOS.entitlements" />
+    <BundleResource Include="de.lproj\StartView.strings">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="en.lproj\StartView.strings">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </BundleResource>
+    <BundleResource Include="de.lproj\PrepareView.strings" />
+    <BundleResource Include="en.lproj\PrepareView.strings" />
+    <BundleResource Include="de.lproj\Localizable.strings" />
+    <BundleResource Include="en.lproj\Localizable.strings" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>

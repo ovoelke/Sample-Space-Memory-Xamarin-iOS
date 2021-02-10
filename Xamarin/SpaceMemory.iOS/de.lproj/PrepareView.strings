@@ -1,0 +1,11 @@
+﻿/* UILabel, Pgr-eZ-uoN, PlayerNameLabel	*/
+"Pgr-eZ-uoN.text" = "Spielername";
+
+/* UILabel, Don-3c-Yah, PlaygroundSizeLabel */
+"Don-3c-Yah.text" = "Spielfeldgröße";
+
+/* UIButton, 8m1-Nk-Keb, StartButton */
+"8m1-Nk-Keb.normalTitle" = "Start";
+
+/* UIButton, siQ-CU-IRc, CancelButton */
+"siQ-CU-IRc.normalTitle" = "Abbrechen";

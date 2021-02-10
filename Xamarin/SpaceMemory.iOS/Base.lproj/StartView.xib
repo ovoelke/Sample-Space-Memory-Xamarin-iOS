@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BebasKai.ttf">
+            <string>BebasKai</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartView">
+            <connections>
+                <outlet property="BackgroundView" destination="qgQ-wz-LTF" id="6bG-5u-CXr"/>
+                <outlet property="LogoView" destination="QF4-17-60W" id="3O4-2Y-faQ"/>
+                <outlet property="ShowHighscoreViewModelButton" destination="ZId-TG-Kx8" id="Ntt-Dn-ieb"/>
+                <outlet property="ShowPrepareViewModelButton" destination="Bae-Bo-4b0" id="n80-Dq-8ye"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qgQ-wz-LTF" userLabel="BackgroundView">
+                    <rect key="frame" x="-25" y="-25" width="464" height="946"/>
+                    <color key="backgroundColor" red="0.1803097427" green="0.13527476790000001" blue="0.3257186413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2CU-EE-tEM" userLabel="UpperHalfView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="548"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StartViewLogo" translatesAutoresizingMaskIntoConstraints="NO" id="QF4-17-60W">
+                            <rect key="frame" x="19.5" y="74" width="375" height="400"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="400" id="UtC-A8-aNy"/>
+                                <constraint firstAttribute="width" constant="375" id="vdv-RF-i94"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="QF4-17-60W" firstAttribute="centerX" secondItem="2CU-EE-tEM" secondAttribute="centerX" id="wCf-QW-sdC"/>
+                        <constraint firstItem="QF4-17-60W" firstAttribute="centerY" secondItem="2CU-EE-tEM" secondAttribute="centerY" id="xkm-qr-iWj"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tdv-FD-xZt" userLabel="BottomView">
+                    <rect key="frame" x="0.0" y="448" width="414" height="448"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bae-Bo-4b0">
+                            <rect key="frame" x="87" y="200.5" width="240" height="61"/>
+                            <color key="backgroundColor" red="0.96337789299999999" green="0.0" blue="0.53732746840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="240" id="cNM-aE-GJ1"/>
+                                <constraint firstAttribute="height" constant="61" id="nVG-qN-zDm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="BebasKai" family="Bebas Kai" pointSize="22"/>
+                            <state key="normal" title="ShowPrepare">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <attributedString key="userComments">
+                                <fragment content="Go to game prepare view."/>
+                            </attributedString>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="30"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZId-TG-Kx8">
+                            <rect key="frame" x="87" y="300.5" width="240" height="61"/>
+                            <color key="backgroundColor" red="0.96337789299999999" green="0.0" blue="0.53732746840000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="240" id="C0x-SV-WdF"/>
+                                <constraint firstAttribute="height" constant="61" id="UwI-g4-ttY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="BebasKai" family="Bebas Kai" pointSize="22"/>
+                            <state key="normal" title="ShowHighscore"/>
+                            <attributedString key="userComments">
+                                <fragment content="Go to highscore view."/>
+                            </attributedString>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="30"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ZId-TG-Kx8" secondAttribute="bottom" constant="86.5" id="DHh-Xy-BYu"/>
+                        <constraint firstItem="ZId-TG-Kx8" firstAttribute="top" secondItem="Bae-Bo-4b0" secondAttribute="bottom" constant="39" id="H2e-Ce-3Zo"/>
+                        <constraint firstItem="Bae-Bo-4b0" firstAttribute="centerX" secondItem="tdv-FD-xZt" secondAttribute="centerX" id="Jhh-zr-KL1"/>
+                        <constraint firstItem="ZId-TG-Kx8" firstAttribute="centerX" secondItem="tdv-FD-xZt" secondAttribute="centerX" id="kDl-EP-nf0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="2CU-EE-tEM" secondAttribute="bottom" constant="-100" id="K4O-Zb-f7d"/>
+                <constraint firstAttribute="bottom" secondItem="qgQ-wz-LTF" secondAttribute="bottom" constant="-25" id="VAb-bL-iP9"/>
+                <constraint firstAttribute="trailing" secondItem="2CU-EE-tEM" secondAttribute="trailing" id="Yzn-lD-J0J"/>
+                <constraint firstItem="tdv-FD-xZt" firstAttribute="top" secondItem="2" secondAttribute="centerY" id="bP6-Se-KqO"/>
+                <constraint firstItem="tdv-FD-xZt" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="dJh-30-Olh"/>
+                <constraint firstItem="qgQ-wz-LTF" firstAttribute="top" secondItem="2" secondAttribute="top" constant="-25" id="e6f-KH-JKX"/>
+                <constraint firstItem="2CU-EE-tEM" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="g8g-7c-XgI"/>
+                <constraint firstAttribute="trailing" secondItem="qgQ-wz-LTF" secondAttribute="trailing" constant="-25" id="jmP-zg-YuZ"/>
+                <constraint firstItem="qgQ-wz-LTF" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="-25" id="lxp-j5-QEA"/>
+                <constraint firstAttribute="trailing" secondItem="tdv-FD-xZt" secondAttribute="trailing" id="nge-7i-tan"/>
+                <constraint firstAttribute="bottom" secondItem="tdv-FD-xZt" secondAttribute="bottom" id="o9B-KM-kh5"/>
+                <constraint firstItem="2CU-EE-tEM" firstAttribute="top" secondItem="2" secondAttribute="top" id="xdi-Ko-wfK"/>
+            </constraints>
+            <point key="canvasLocation" x="24.800000000000001" y="51.724137931034484"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="StartViewLogo" width="350" height="400"/>
+    </resources>
+</document>

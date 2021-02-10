@@ -1,0 +1,11 @@
+﻿/* UILabel, Pgr-eZ-uoN, PlayerNameLabel	*/
+"Pgr-eZ-uoN.text" = "Playername";
+
+/* UILabel, Don-3c-Yah, PlaygroundSizeLabel */
+"Don-3c-Yah.text" = "Playground Size";
+
+/* UIButton, 8m1-Nk-Keb, StartButton */
+"8m1-Nk-Keb.normalTitle" = "Start";
+
+/* UIButton, siQ-CU-IRc, CancelButton */
+"siQ-CU-IRc.normalTitle" = "Cancel";
