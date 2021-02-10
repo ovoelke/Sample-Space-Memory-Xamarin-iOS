@@ -35,6 +35,6 @@ The images from the `/Design` folder can be used as the basis for the design.
 
 ## Architecture
 
-An [MVVM](https://en.wikipedia.org/wiki/Model–view–viewmodel) architecture is recommended. The app should also be built as a cross-platform app using [Xamarin](https://visualstudio.microsoft.com/xamarin/).
+An [MVVM](https://en.wikipedia.org/wiki/Model–view–viewmodel) architecture is recommended and the app should also be built as a cross-platform app using [Xamarin](https://visualstudio.microsoft.com/xamarin/).
 
 A documentation for this framework can be found here: https://docs.microsoft.com/xamarin/
