@@ -1,6 +1,6 @@
 # Sample-Mobile-Space-Memory
 
-![GamePreview](Design/Preview.png)
+![GamePreview](Design/PreviewNew.png)
 
 ## Challenge
 
