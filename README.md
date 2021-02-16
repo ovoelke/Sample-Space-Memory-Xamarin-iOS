@@ -33,8 +33,14 @@ The images from the `/Design` folder can be used for the basic design.
 
 ![Tile-Preview](Design/Tiles.png)
 
+## Code
+
+The example shown here is only an early stage of development as a Xamarin app and uses Apple's Game Center as a highscore service. 
+It is recommended to use a cross-platform RestAPI for highscores.
+
 ## Architecture
 
 An [MVVM](https://en.wikipedia.org/wiki/Model–view–viewmodel) architecture is recommended and the app should also be built as a cross-platform app using [Xamarin](https://visualstudio.microsoft.com/xamarin/).
 
 A documentation for this framework can be found here: https://docs.microsoft.com/xamarin/
+
