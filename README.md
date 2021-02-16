@@ -35,7 +35,7 @@ The images from the `/Design` folder can be used for the basic design.
 
 ## Code
 
-The example shown here is only an early stage of development as a Xamarin app and uses Apple's Game Center as a highscore service. 
+The example shown here is only an *early stage of development* as a Xamarin app and uses Apple's Game Center as a highscore service. 
 
 It is recommended to use a cross-platform RestAPI for highscores.
 
