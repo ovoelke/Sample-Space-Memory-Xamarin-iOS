@@ -10,26 +10,26 @@
 
 After starting the app, the player should be able to start a new game or view the high scores of past games on a title screen.
 
-When the player starts a new game, he should be able to choose a difficulty level before starting the game. Optionally, he can assign a player name.
+If the player wants to start a new game, he should be able to choose a difficulty level before the game starts. 
+Optionally he can assign a player name for the highscore ladder.
 
 The selected difficulty level determines how many fields are displayed in the game.
 
-Sample:
+e.g.
 | Difficult | Fieldsize |
 |-----------|-----------|
 | Easy      | 3 x 3     |               
-| Medium    | 5 x 5     |
-| Hard      | 7 x 7     |
+| Medium    | 4 x 4     |
+| Hard      | 5 x 5     |
 
 ## Highscore
 
 The required time and the number of failed attempts is the base for calculating the achieved high score.
-
 How the calculation looks, is not firmly defined.
 
 ## Design
 
-The images from the `/Design` folder can be used as the basis for the design.
+The images from the `/Design` folder can be used for the basic design.
 
 ![Tile-Preview](Design/Tiles.png)
 
